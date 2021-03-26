@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+body{
+    margin: 0px auto;
+    background-color: #00253B;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10%;
+}
+h1{
+    color: #c5dbdd;
+}
+#cards-placeholder{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+.card{
+    border: 1px solid #c5dbdd;
+    border-radius: 10px;
+    width: 18%;
+    background-color: rgb(70, 100, 102,95%);
+
+}
+.movie-poster{
+    width: 100%;
+    margin: auto;
+}
+.movie-title{
+    margin: 5% auto 2%;
+
+}
+.movie-year{
+    color: #c5dbdd;
+    margin: 0px;
+}
+.addToCart{
+    border: 1px solid #c5dbdd;
+    color: #c5dbdd;
+    background: none;
+    border-radius: 30px;
+}
+.addToCart:hover{
+    background: #c5dbdd;
+    color: #00253B;
+    border: #00253B;
+
+}
+.card .addToCart, .movie-value{
+    margin: 0px auto;
+}
+.cart-button{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #c5dbdd;
+    background: none;
+    color: #c5dbdd;
+    font-weight: 500;
+}
+.cart-button:hover{
+    border: 1px solid #c5dbdd;
+    background: #c5dbdd;
+    color: #00253B;
+
+}
+.cart{
+    border: 1px solid white;
+    background-color: #c5dbdd;
+    display: block;
+    position: fixed;
+    top: 6.5%;
+    right: 10%;
+    text-align: center;
+    padding: 5px;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cart-price{
+    margin-left: 60%;
+    font-weight: 500;
+}
+.delete-item{
+    border-radius: 100%;
+}
+.cart-total-price{
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+}
+.pay-button{
+    margin: 5px auto;
+    width: 50%;
+    padding: 10px;
+    background: rgb(70, 100, 102);
+    border-radius: 30px;
+    color: white;
+}
+@media (max-width: 480px) {
+    #cards-placeholder{
+        width: 90%;
+    }
+    .card{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .movie-poster{
+        width: 100%;
+    }
+    .image{
+        width: 40%;
+
+    }
+    .movieInfo{
+        width: 50%;
+    }
+    .addToCart:active{
+        background: #c5dbdd;
+        color: #00253B;
+        border: #00253B;
+    
+    }
+
+}
+@media (min-width:481px) and (max-width:840px){
+    #cards-placeholder{
+        width: 90%;
+    }
+    .card{
+        width: 20%;
+    }
+    h1{
+        margin-right: 45%;
+        color: #c5dbdd;
+    }
+
+}
+    
